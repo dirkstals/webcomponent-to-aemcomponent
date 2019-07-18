@@ -6,6 +6,8 @@
 
 This script will search for webcomponents that are defined in the customElement registry. Then transpiles these components to AEM components.
 
+![Demo](docs/webcomponent-to-aemcomponent.gif "Demo")
+
 ## Requirements
 
 ### Node
