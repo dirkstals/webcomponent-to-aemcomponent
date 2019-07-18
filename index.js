@@ -134,7 +134,7 @@ inquirer.prompt(questions).then(async ({ module, group, versioned, project }) =>
           componentHtmlFile
             .replace(/\{tag\}/g, key)
             .replace(/\{attributes\}/g, attributes.map(attr => `${attr}="\$\{properties.${attr}\}"`).join(`
-    `))
+  `))
         );
 
         mkdirp.sync(`${componentDirectory}/_cq_dialog`);
@@ -145,11 +145,11 @@ inquirer.prompt(questions).then(async ({ module, group, versioned, project }) =>
           componentContentDialogFile
             .replace(/\{title\}/g, UpperCase(name))
             .replace(/\{attributes\}/g, attributes.map(attr => `<${attr}
-                                                  jcr:primaryType="nt:unstructured"
-                                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                  fieldLabel="${UpperCase(attr)}"
-                                                  name="./${attr}"/>`).join(`
-                                              `))
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="${UpperCase(attr)}"
+                                                name="./${attr}"/>`).join(`
+                                            `))
         );
       }
 
