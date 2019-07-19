@@ -133,7 +133,7 @@ inquirer.prompt(questions).then(async ({ module, group, versioned, project }) =>
           `${componentDirectory}/${name}.html`,
           componentHtmlFile
             .replace(/\{tag\}/g, key)
-            .replace(/\{attributes\}/g, attributes.map(attr => `${attr}="\$\{properties.${attr}\}"`).join(`
+            .replace(/\{attributes\}/g, attributes.map(attr => `${attr}="\$\{properties.${attr.replace(/-/g, '_')}\}"`).join(`
   `))
         );
 
@@ -148,7 +148,7 @@ inquirer.prompt(questions).then(async ({ module, group, versioned, project }) =>
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 fieldLabel="${UpperCase(attr)}"
-                                                name="./${attr}"/>`).join(`
+                                                name="./${attr.replace(/-/g, '_')}"/>`).join(`
                                             `))
         );
       }
