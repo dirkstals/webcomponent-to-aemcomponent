@@ -1,6 +1,6 @@
 {
-  "name": "aem-webcomponents",
-  "version": "1.0.0",
+  "name": "webcomponent-to-aemcomponent",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
