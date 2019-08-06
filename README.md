@@ -45,8 +45,8 @@ Enter an AEM app directory (optionally):
 
 Try creating AEM components with the wired-elements module.
 
-![Example](docs/example.png "Example")
+![Example](https://raw.githubusercontent.com/dirkstals/webcomponent-to-aemcomponent/master/docs/example.png "Example")
 
 This will result in these components:
 
-![CRX](docs/crx.png "CRX")
+![CRX](https://raw.githubusercontent.com/dirkstals/webcomponent-to-aemcomponent/master/docs/crx.png "CRX")
