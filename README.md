@@ -6,8 +6,6 @@
 
 This script will search for webcomponents that are defined in the customElement registry. Then transpiles these components to AEM components.
 
-![Demo](docs/webcomponent-to-aemcomponent.gif "Demo")
-
 ## Requirements
 
 ### Node
@@ -42,3 +40,13 @@ Enter a component group for your library:
 Do you wish to use versioned clientlibs?
 Enter an AEM app directory (optionally):
 ```
+
+## Examples
+
+Try creating AEM components with the wired-elements module.
+
+![Example](docs/example.png "Example")
+
+This will result in these components:
+
+![CRX](docs/crx.png "CRX")
